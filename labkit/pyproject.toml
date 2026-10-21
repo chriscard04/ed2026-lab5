@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labkit"
+version = "1.0.0"
+description = "Caja de herramientas del Lab 5 de árboles y grafos (Estructura de Datos, UTP)"
+requires-python = ">=3.9"
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+graficos = ["matplotlib>=3.5"]
+
+[tool.setuptools]
+packages = ["labkit"]
